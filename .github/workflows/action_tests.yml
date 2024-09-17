@@ -28,6 +28,9 @@ jobs :
     - name: Add and commit coverage
       run:  |
            git pull
+           if (Test-Path "back_coverage") {
+                    Remove-Item -Recurse -Force "back_coverage" 
+           }
            mv target/site back_coverage 
            git config --global user.email EMAIL
            git config --global user.name NAME
