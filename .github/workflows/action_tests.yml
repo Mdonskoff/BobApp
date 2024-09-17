@@ -29,6 +29,8 @@ jobs :
       run:  |
            git pull
            mv target/site back_coverage 
+           git config --global user.email EMAIL
+           git config --global user.name NAME
            git add .
            git commit -m "Tests backend coverage report"
            git push origin main
