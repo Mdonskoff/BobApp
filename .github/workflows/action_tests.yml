@@ -29,9 +29,9 @@ jobs :
       run: mvn jacoco:report # Génère le rapport de couverture avec JaCoCo
 
     - name: Upload backend coverage report as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: back_coverage
-        path: target/site/jacoco/ # Chemin vers les fichiers de couverture JaCoCo
+        path: target/back_coverage/jacoco/ # Chemin vers les fichiers de couverture JaCoCo
 
       
