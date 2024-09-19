@@ -32,6 +32,6 @@ jobs :
       uses: actions/upload-artifact@v4
       with:
         name: back_coverage
-        path: target/back_coverage/jacoco/ # Chemin vers les fichiers de couverture JaCoCo
+        path: target/site/jacoco/ # Chemin vers les fichiers de couverture JaCoCo
 
       
