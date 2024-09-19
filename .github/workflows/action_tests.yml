@@ -11,7 +11,7 @@ on :
 jobs :
   build_back:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: back #se mettre dans le dossier back de github pour exécuter
